@@ -10,11 +10,11 @@ int main(void)
 	int hex;
 	char letter;
 
-	for (hex = 0; hex <= 10; hex++)
+	for (hex = 0; hex < 10; hex++)
 	{
-		putchar((hex % 10) + '0');
+		putchar(hex + '0');
 	}
-	for (letter = 'a'; letter <= 'f'; letter++)
+	for (letter = 'a'; letter < 'g'; letter++)
 	{
 		putchar(letter);
 	}
