@@ -3,10 +3,9 @@
 /**
  * _islower - Function that checks for lowercase character
  *
- *@C: The character in ASCII code
+ * @c: The character in ASCII code
  *
- * Return: 1 if successful
- * Return: 0 if not
+ * Return: 1 if successful; 0 if not
  */
 int _islower(int c)
 {
