@@ -3,7 +3,9 @@
 /**
  * print_last_digit - Print the last digit of a number.
  *
- * Return the last digit.
+ * @x: Is an integer
+ *
+ * Return: the last digit.
  */
 int print_last_digit(int x)
 {
