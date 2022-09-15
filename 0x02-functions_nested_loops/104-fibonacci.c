@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - finds and prints the first 98 Fibonacci numbers, starting with 1 and 2
- * 
+ * main - Find and prints the first 98 Fibonacci numbers, starting with 1 and 2
+ *
  * Return: ALways 0 (Success)
  */
 int main(void)
@@ -9,7 +9,7 @@ int main(void)
 	unsigned long int x, y, a, a1, a2, b1, b2;
 
 	y = 1;
-	b = 2;
+	a = 2;
 
 	printf("%lu", y);
 
@@ -29,10 +29,10 @@ int main(void)
 	{
 		printf(", %lu", b1 + (b2 / 1000000000));
 		printf("%lu", b2 % 1000000000);
-		b1 = b1 + y1;
-		y1 = b1 - y1;
-		b2 = b2 + y2;
-		a2 = b2 - y2;
+		b1 = b1 + a1;
+		a1 = b1 - a1;
+		b2 = b2 + a2;
+		a2 = b2 - a2;
 	}
 
 	printf("\n");
