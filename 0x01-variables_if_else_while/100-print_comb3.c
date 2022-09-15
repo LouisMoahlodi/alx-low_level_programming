@@ -19,7 +19,7 @@ int main(void)
 			if (num < 8)
 			{
 				putchar(',');
-				putchar(32);
+				putchar(' ');
 			}
 			i++;
 		} while (i < 10);
