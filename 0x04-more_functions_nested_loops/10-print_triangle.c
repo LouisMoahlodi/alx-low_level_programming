@@ -9,16 +9,17 @@
  */
 void print_triangle(int size)
 {
-	int row, col, space;
+	int row, col;
 
-	if (size <= 0)
-		_putchar('\n');
 	for (row = 0; row < size; row++)
 	{
-		for (col = size - row; col > 1; col--)
+		for (col = 1; col < (size - row); col++)
 			_putchar(' ');
-		for (space = row + col; space >= 1; space--)
+
+		for (col--; col < size; col++)
 			_putchar('#');
-		_putchar('\n');
+		if (row < (size - 1))
+			_putchar('\n');
 	}
+	_putchar('\n');
 }
