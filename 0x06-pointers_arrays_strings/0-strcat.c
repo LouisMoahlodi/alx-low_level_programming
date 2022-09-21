@@ -3,23 +3,22 @@
 /**
  * _strcat - Concatenate two strings
  *
- * @dest: Destination: char variable
- * @src: Soruce: char varible
+ * @dest: Destination string
+ * @src: Soruce string
  *
  * Return: 0 Always (Success)
  */
 char *_strcat(char *dest, char *src)
 {
-	int x = 0, y = 0;
+	int len1;
+	int len2;
+	int i;
 
-	while (dest[x] != '\0')
-		x++;
-	while (src[y] != '\0')
+	len1 = strlen(dest);
+	len2 = strlen(src);
+	for (i = 0; i <= len2; i++)
 	{
-		dest[x] = src[y];
-		y++;
-		x++;
+		dest[len1 + i] = src[i];
 	}
-	dest[x] = '\0';
 	return (dest);
 }
