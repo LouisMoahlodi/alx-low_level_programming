@@ -1,11 +1,10 @@
 #include "main.h"
 
 /**
- * _strncat - Concatenate two strings 
+ * _strcat - Concatenate two strings
  *
- * @dest - Destination: char variable 
- * @src - Soruce: char varible
- * @n: Is an intger
+ * @dest: Destination: char variable
+ * @src: Soruce: char varible
  *
  * Return: 0 Always (Success)
  */
