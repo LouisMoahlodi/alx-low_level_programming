@@ -4,35 +4,25 @@
  * reverse_array - Function that prints an  array of integers in reverse
  *
  * @a: Integer for array pointer
- * @n: Integer type
+ * @n: an element of an array int
  *
  * Return: void
  */
 void reverse_array(int *a, int n)
 {
-	int left;
+	int *left;
+	int i;
 	int right;
-	
-	reverse_array(a, n);
-	
-	left = *a;
-	while (left < right)
-	{
-		n = right;
-		right = left;
-		left = n;
-		left++;
-		right--;
-	}
-	reverse_array(a, n);
-}
-void reverse(int * a, int n)
-{
-	int * aEnd = (a + n -1);
+	int x;
 
-	while (a <= aEnd)
+	left = a;
+	for (i = 0; i < n; i++)
+		left++;
+	for (x = 0; x <= (i - 1) / 2; x++) /*Swaping the array */
 	{
-		printf("%d, ", *a);
-		a++;
+		right = a[x];
+		a[x] = *left;
+		*left = right;
+		left--;
 	}
 }
