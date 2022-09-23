@@ -6,7 +6,7 @@
  * @s1: Comparing variable
  * @s2: Comparing variable
  *
- * Return: 0 if strings the same; 1 if not the same
+ * Return: 0 if strings the same; negative or positive if not the same; 
  */
 int _strcmp(char *s1, char *s2)
 {
