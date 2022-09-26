@@ -8,7 +8,7 @@
  *
  * Return:: c or NULL
  */
-char *_strchr(const char *s, int c)
+char *_strchr(const char *s, char c)
 {
 	while (*s != '\0')
 	{
