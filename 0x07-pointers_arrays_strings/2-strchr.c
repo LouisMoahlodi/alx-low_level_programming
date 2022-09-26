@@ -8,36 +8,12 @@
  *
  * Return:: c or NULL
  */
-char *_strchr(char *s, char c)
+char *_strchr(const char *s, int c)
 {
-	char *x;
-	char *y;
-
-	y = &c;
-
-	if (*y == 0)
+	while (*s != '\0')
 	{
-		return ((char *) s);
+		if (*s == c) return ((char *) s);
+		s++;
 	}
-	for ( ; *s != 0; s += 1)
-	{
-		if (*s != *y)
-		{
-			continue;
-		}
-		x = s;
-		while (1)
-		{
-			if (*y == 0)
-			{
-				return ((char *) s);
-			}
-			if (*x++ != *y++)
-			{
-				break;
-			}
-		}
-		y = &c;
-	}
-	return (NULL);
+	return NULL;
 }
