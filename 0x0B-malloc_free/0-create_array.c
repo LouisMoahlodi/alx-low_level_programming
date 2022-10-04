@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * create_array - creates an array of chars and intializes it with a specific char
@@ -9,7 +10,7 @@
  * Return: array to pointer: or NULL if array = 0 and/or if fail
  *
  */
-char *creat_array(unsigned int size, char c)
+char *create_array(unsigned int size, char c)
 {
 	char *array;
 	unsigned int i;
