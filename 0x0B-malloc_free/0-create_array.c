@@ -19,12 +19,16 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
+
+	/* Allocating enough space for all array members */
 	array = malloc(sizeof(char) * size);
 
 	if (array == NULL)
 		return (NULL);
+	/* Put a char c in each of the memory loactions */
 	for (i = 0; i < size; i++)
 	{
+		/* assign the char to the specific memory location */
 		array[i] = c;
 	}
 	return (array);
