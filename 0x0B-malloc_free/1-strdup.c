@@ -22,10 +22,9 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	strlen = 0;
-	while (str[strlen] != '\0')
+	for (strlen = 0; str[strlen] != '\0'; strlen++)
 	{
-		strlen++;
+
 	}
 	/* determine size and allocate enough memory space for it */
 	x = malloc(strlen * sizeof(char) + 1);
