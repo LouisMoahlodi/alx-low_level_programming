@@ -18,11 +18,15 @@ char *_strdup(char *str)
 	int strlen;
 	int count;
 
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 	strlen = 0;
-       while (str[strlen] != '\0')
-       { 
-	       strlen++;
-       }
+	while (str[strlen] != '\0')
+	{
+		strlen++;
+	}
 	/* determine size and allocate enough memory space for it */
 	x = malloc(strlen * sizeof(char) + 1);
 
