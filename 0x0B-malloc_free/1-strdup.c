@@ -22,6 +22,7 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
+	/* determining the length */
 	for (strlen = 0; str[strlen] != '\0'; strlen++)
 	{
 
