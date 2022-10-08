@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	total = 0;
 	if (argc > 1)
 	{
-		for (i = 0; argv[i], i++)
+		for (i = 1; argv[i]; i++)
 		{
 			num = strtol(argv[i], &p, 10);
 			if (!*p)
@@ -30,7 +30,6 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
-
 	}
 	printf("%d\n", total);
 	return (0);
