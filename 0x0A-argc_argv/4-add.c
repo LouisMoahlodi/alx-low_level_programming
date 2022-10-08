@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 		{
 			num = strtol(argv[i], &p, 10);
 			if (!*p)
-				toral += num;
+				total += num;
 			else
 			{
 				printf("Error\n");
