@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_node - Function adds a new node at the beginning of a list_t
+ * add_node_end - Function adds a new node at the beginning of a list_t
  *
  * @head: head of the linked list
  * @str: string to store in the list
@@ -32,14 +32,14 @@ list_t *add_node_end(list_t **head, const char *str)
 	new->len = len;
 	new->next = NULL;
 
-	if(*head == NULL)
+	if (*head == NULL)
 		*head = new;
-	
+
 	else
 	{
 		last = *head;
 		while (last->next != NULL)
-			last = last ->next;
+			last = last->next;
 		last->next = new;
 	}
 	return (new);
