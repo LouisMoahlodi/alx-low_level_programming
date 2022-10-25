@@ -3,7 +3,7 @@
 /**
  * add_node - Function adds a new node at the beginning of a list_t
  *
- * @head: head of the linked list 
+ * @head: head of the linked list
  * @str: string to store in the list
  *
  * Return: address of the new element: or "NULL" if failure
@@ -33,6 +33,6 @@ list_t *add_node(list_t **head, const char *str)
 	new->next = *head;
 
 	*head = new;
-	
+
 	return (new);
 }
