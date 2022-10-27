@@ -4,7 +4,7 @@
  * reverse_listint - Function revers a linked list
  *
  * @head: double pointer to the head the list
- * 
+ *
  * Return: pointer to first node if reversed list
  */
 
